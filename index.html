@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>太阳系风格动态画面</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="scene">
+      <div class="hud">
+        <div class="clock">
+          <span id="time">00:00</span>
+          <span id="date"></span>
+        </div>
+      </div>
+
+      <div id="webgl"></div>
+      <div class="solar">
+        <div class="sun"></div>
+ 
+        <div class="orbit" style="--rx: 90px; --ry: 70px; --period: 6s; --inclineZ: 8deg;">
+          <div class="planet" style="--size: 10px; --color1:#c2b59b; --color2:#857a6b; --spin: 12s;"></div>
+        </div>
+        <div class="orbit" style="--rx: 140px; --ry: 120px; --period: 10s; --inclineZ: -6deg;">
+          <div class="planet" style="--size: 14px; --color1:#d2a46b; --color2:#9a6b34; --spin: 18s;"></div>
+        </div>
+        <div class="orbit" style="--rx: 190px; --ry: 150px; --period: 16s; --inclineZ: 12deg; --orbit-tilt: 2deg;">
+          <div class="planet" style="--size: 16px; --color1:#5fa8ff; --color2:#1a4d8f; --spin: 16s;"></div>
+        </div>
+        <div class="orbit" style="--rx: 240px; --ry: 210px; --period: 30s; --inclineZ: -14deg; --orbit-tilt: -3deg;">
+          <div class="planet ringed" style="--size: 22px; --color1:#7aa3c9; --color2:#274b65; --spin: 20s;"></div>
+        </div>
+        <div class="orbit" style="--rx: 290px; --ry: 230px; --period: 40s; --inclineZ: 4deg;">
+          <div class="planet" style="--size: 20px; --color1:#7b5d3e; --color2:#3e2d1f; --spin: 24s;"></div>
+        </div>
+        <div class="orbit" style="--rx: 340px; --ry: 270px; --period: 55s; --inclineZ: -10deg;">
+          <div class="planet" style="--size: 18px; --color1:#6fa79f; --color2:#2c4f49; --spin: 28s;"></div>
+        </div>
+        <div class="orbit" style="--rx: 390px; --ry: 300px; --period: 70s; --inclineZ: 6deg;">
+          <div class="planet" style="--size: 16px; --color1:#8f95a3; --color2:#404451; --spin: 32s;"></div>
+        </div>
+        <div class="orbit" style="--rx: 440px; --ry: 330px; --period: 85s; --inclineZ: -8deg; --orbit-tilt: 3deg;">
+          <div class="planet" style="--size: 14px; --color1:#87a3d1; --color2:#2f4b78; --spin: 36s;"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
